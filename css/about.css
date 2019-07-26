@@ -1,0 +1,68 @@
+.main .avatar img {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border: 6px solid white;
+    border-radius: 50% 50%;
+    margin: 30px 55px 30px 125px;
+
+}
+
+.avatar {
+    float: left;
+}
+
+.about {
+    float: right;
+    width: 450px;
+}
+
+.about h1 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    color: #414141;
+}
+
+.about-me {
+    word-wrap: break-word;
+    height: auto;
+    max-height: 500px;
+    width: 400px;
+    overflow: auto;
+    margin-right: 110px;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    color: #414141;
+    padding-right: 25px;
+}
+
+.clearfix li:first-child .item {
+    color: #32c3e5;
+}
+
+.clearfix li:first-child {
+    border-right: 5px solid #33c1e3;
+}
+
+.download {
+    float: right;
+    margin-right: 130px;
+    margin-top: 50px;
+}
+
+.download a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    color: #e85f61;
+    border: 2px solid #e85f61;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.download a:hover {
+    color: #f6f6f6;
+    background-color: #e85f61;
+}

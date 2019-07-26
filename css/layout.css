@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+    url('../fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: auto;
+    width: 1250px;
+    background-color: #f6f6f6;
+}
+
+.page-header {
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.page-header img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border: 2px solid #bfbfbf;
+    border-radius: 50% 50%;
+    margin-left: 130px;
+    margin-top: 8px;
+    float: left;
+}
+
+.name {
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 0;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+}
+
+.page-header .contacts {
+    float: right;
+    margin-right: 130px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    color: #33c1e3;
+    text-decoration: none;
+    line-height: 18px;
+}
+
+.points {
+    font-size: 10px;
+    line-height: 2px;
+}
+
+.triangle {
+    position: absolute;
+    right: 180px;
+    top: 40px;
+    text-align: center;
+    border: 10px solid transparent;
+    border-bottom: 15px solid #bfbfbf;
+    opacity: 0;
+}
+
+.triangle-mini {
+    position: absolute;
+    right: 180px;
+    top: 42px;
+    text-align: center;
+    border: 10px solid transparent;
+    border-bottom: 15px solid white;
+    z-index: 300;
+    opacity: 0;
+}
+
+.contacts-view {
+    position: absolute;
+    right: 50px;
+    top: 65px;
+    text-align: center;
+    border: 2px solid #bfbfbf;
+    border-radius: 15px 15px;
+    background-color: white;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    display: none;
+    z-index: 200;
+}
+
+.contacts-item {
+    margin: 20px 20px 20px 60px;
+}
+
+.page-header .contacts:hover {
+    cursor: pointer;
+    color: #e85f61;
+    border-color: #e85f61;
+}
+
+.page-header .contacts:hover+.triangle {
+    opacity: 1;
+}
+
+.page-header .contacts:hover+.triangle+.triangle-mini {
+    opacity: 1;
+}
+
+.page-header .contacts:hover+.triangle+.triangle-mini+.contacts-view {
+    display: block;
+}
+
+ul {
+    float: left;
+    width: 220px;
+    margin: 30px 0 0 130px;
+    list-style: none;
+    padding: 0;
+}
+
+.clearfix li {
+    text-align: right;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    color: #414141;
+    text-decoration: none;
+    line-height: 0;
+    padding: 20px;
+}
+
+.clearfix a {
+    text-decoration: none;
+}
+
+.clearfix .item {
+    color: #414141;
+}
+
+.item:hover {
+    cursor: pointer;
+    color: #33c1e3;
+}
+
+.main {
+    background-color: #f6f6f6;
+    min-height: 570px;
+    height:100%;
+    width: 100%;
+    margin: auto;
+}
+
+.page-footer {
+    position: fixed;
+    background-color: #414141;
+    height: 50px;
+    min-width: 1250px;
+    width: 1250px;
+    margin: 0;
+    bottom: 0;
+    z-index: 101;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.page-footer p {
+    color: rgba(246, 246, 246, 0.3);
+    padding-top: 15px;
+    padding-left: 130px;
+    margin: 0;
+    float: left;
+}
+
+.social {
+    float: right;
+    margin-right: 130px;
+    margin-top: 15px;
+}
+
+.social a {
+    color: #f6f6f6;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+    padding-left: 15px;
+}
+
+.social a:hover {
+    cursor: pointer;
+    color: #e85f61;
+}
